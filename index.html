@@ -10,10 +10,17 @@
   --text-secondary: #b0b0b0;
   --accent: #bb86fc;
 }
-body {
-  background: var(--bg-primary);
-  color: var(--text-primary);
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+}
+body {
+  min-height: 100vh;
+  color: var(--text-primary);
+  transition: all 0.3s;
+  line-height: 1.6;
 }
 a { color: var(--accent); }
 
@@ -59,23 +66,41 @@ figcaption {
 
     <hr>
 
-    <h3>Gallery</h3>
+    <h2>Gallery</h2>
     
-    <h4>Singular moduli</h4>
+    <h3>Singular moduli</h3>
 
     <section class="gallery">
 
       <figure>
 	<img src="figures/singular_moduli_2_35_web.png" alt="singular moduli 1">
-	<figcaption>Discriminant 2^(-35)</figcaption>
+	<figcaption>Discriminant -2^35</figcaption>
       </figure>
       <figure>
 	<img src="figures/singular_moduli_2_39_web.png" alt="singular moduli 2">
-	<figcaption>Discriminant 2^(-37)</figcaption>
+	<figcaption>Discriminant -2^37</figcaption>
       </figure>
       <figure>
 	<img src="figures/singular_moduli_2_43_web.png" alt="singular moduli 3">
-	<figcaption>Discriminant 2^(-43)</figcaption>
+	<figcaption>Discriminant -2^43</figcaption>
+      </figure>
+    </section>
+
+    <h3>Integer points in spheres</h3>
+
+    <section class="gallery">
+
+      <figure>
+	<img src="figures/death_star6h_web.png" alt="linnik 1">
+	<figcaption>Square radius 226686</figcaption>
+      </figure>
+      <figure>
+	<img src="figures/linnik2_0003524578_web.png" alt="linnik 2">
+	<figcaption>Square radius 3524578</figcaption>
+      </figure>
+      <figure>
+	<img src="figures/linnik2_0063245986_web.png" alt="linnik 3">
+	<figcaption>Square radius 63245986</figcaption>
       </figure>
     </section>
 
