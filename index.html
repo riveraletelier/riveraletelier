@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
+
 <head>
 <style>
 :root {
@@ -21,6 +22,43 @@ header, main, footer {
   border-radius: 8px;
 }
 a { color: var(--accent); }
+
+.gallery {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+.gallery h2 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+figure {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+figure img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+figcaption {
+  padding: 15px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 
@@ -29,6 +67,25 @@ a { color: var(--accent); }
 
 <h1>Juan Rivera-Letelier</h1>
 <h2>Mathematician</h2>
+
+<hr>
+
+<section class="gallery">
+  <h2>Gallery</h2>
+
+  <figure>
+    <img src="figures/singular_moduli_2_35_web.png" alt="singular moduli 1">
+    <figcaption>Singular moduli of discriminant 2^{-35}</figcaption>
+  </figure>
+  <figure>
+    <img src="figures/singular_moduli_2_39_web.png" alt="singular moduli 2">
+    <figcaption>Singular moduli of discriminant 2^{-37}</figcaption>
+  </figure>
+  <figure>
+    <img src="figures/singular_moduli_2_43_web.png" alt="singular moduli 3">
+    <figcaption>Singular moduli of discriminant 2^{-43}</figcaption>
+  </figure>
+</section>
 
 <hr>
 
