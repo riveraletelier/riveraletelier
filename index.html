@@ -26,6 +26,23 @@
 	  transition: all 0.3s;
 	  line-height: 1.6;
       }
+      a {
+	  color: #82aaff;
+	  text-decoration: underline;
+      }
+      a:hover {
+	  color: #c3dafe;
+	  text-decoration: underline;
+      }
+      a:visited {
+	  color: #e2bfff;
+      }
+      .subtitle {
+	  font-size: 0.5em; /* smaller than the header */
+	  font-weight: normal; /* not bold */
+	  color: var(--text-secondary);
+	  margin-left: 10px; /* space from the name */
+      }
       .gallery {
 	  display: grid;
 	  grid-template-columns: repeat(3, 1fr);
@@ -63,8 +80,10 @@
   </head>
   <body>
 
-    <h1>Juan Rivera-Letelier</h1>
-    <h2>Mathematician</h2>
+    <h1>
+      Juan Rivera-Letelier
+      <span class="subtitle">Mathematician</span>
+    </h1>
 
     <hr>
 
@@ -98,7 +117,7 @@
       </figure>
     </section>
 
-    <h3>Integer points in spheres</h3>
+    <h3>Integer points on spheres</h3>
 
     <section class="gallery">
 
